@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "espressomod",
+	"version": "${version}",
+	"name": "Espresso Mod",
+	"description": "Espressos! Brew your coffees in style!",
+	"authors": [
+		"Entangled"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/espressomod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.entangled.espressomod.EspressoMod"
+		],
+		"client": [
+			"net.entangled.espressomod.EspressoModClient"
+		],
+		"fabric-datagen": [
+			"net.entangled.espressomod.EspressoModDataGenerator"
+		]
+	},
+	"mixins": [
+		"espressomod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
